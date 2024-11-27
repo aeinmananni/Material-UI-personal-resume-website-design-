@@ -1,3 +1,54 @@
+@font-face {
+     font-family: 'IranSans';
+     src: url('./../public/fonts/IRANSansXFaNum-Black.ttf ');
+     src: url('./../public/fonts/IRANSansXFaNum-Bold.ttf ');
+     src: url('./../public/fonts/IRANSansXFaNum-DemiBold.ttf ');
+     src: url('./../public/fonts/IRANSansXFaNum-Medium.ttf');
+     src: url('./../public/fonts/IRANSansXFaNum-Medium.ttf');
+
+     font-weight: normal;
+     font-style: normal;
+   }
+
 *{
      margin: 0;
+
+}
+
+   
+body ,html{
+      background-color: #e0d8c5;
+      overflow: hidden;
+      max-height: 100vh;
+      font-family: 'IranSans', sans-serif
+}
+[dir='rtl'] {
+     direction: rtl;
+     text-align: right;
+   }
+   
+   [dir='ltr'] {
+     direction: ltr;
+     text-align: left;
+   }
+
+@media (max-width:900px) {
+     .App{
+          margin-top: 10px;
+     }
+}
+
+.App{
+      margin-top: 30px;
+}
+
+.MuiPaper-root{
+      border-radius: 10px !important;
+      position: relative !important;
+}
+.MuiToolbar-root{
+     min-height: auto !important;
+}
+.rounded-btn{
+     border-radius: 25px !important;
 }
