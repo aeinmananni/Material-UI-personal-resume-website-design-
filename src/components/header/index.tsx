@@ -20,7 +20,7 @@ export default function Header() {
   const { t, changeLanguage } = useChangeLanguage();
 
   const { isTranslate, setIsTranslate } = useStoreManager();
-  console.log(isTranslate);
+
   return (
     <Paper>
       <AppBar sx={{ backgroundColor: "background.paper" }}>
