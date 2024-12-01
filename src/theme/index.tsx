@@ -3,7 +3,7 @@ import { green, orange } from "@mui/material/colors";
 
 export const theme = createTheme({
   typography: {
-    fontFamily: "IranSans, Arial, sans-serif",
+    fontFamily: "Vazirmatn, Arial, sans-serif",
   },
   palette: {
     primary: {

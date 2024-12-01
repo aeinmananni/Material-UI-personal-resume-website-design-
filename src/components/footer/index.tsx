@@ -1,8 +1,11 @@
 import { AppBar, Box, Grid2, Toolbar, Typography } from "@mui/material";
+import { useChangeLanguage } from "../../hooks/useChange-language";
 
 export default function Footer() {
+  const { t } = useChangeLanguage();
+
   return (
-    <Box mt={2} mb={2}>
+    <Box mb={2}>
       <AppBar sx={{ backgroundColor: "background.paper" }}>
         <Toolbar disableGutters>
           <Grid2
@@ -15,11 +18,11 @@ export default function Footer() {
             sx={{ width: "100%" }}
           >
             <Grid2>
-              <Typography variant="button">my Git Hub</Typography>
+              <Typography variant="button">{t("GitHub")}</Typography>
             </Grid2>
             <Grid2>
-              <Typography variant="body2">
-                @ 2024 All rights reserved{" "}
+              <Typography className="persian-numbers" variant="body2">
+                {t("Reserved")}
               </Typography>
             </Grid2>
           </Grid2>

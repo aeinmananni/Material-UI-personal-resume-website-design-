@@ -5,5 +5,5 @@ export const useChangeLanguage = () => {
     i18n.changeLanguage(lng);
     document.documentElement.setAttribute("dir", lng === "fa" ? "rtl" : "ltr");
   };
-  return { t, changeLanguage };
+  return { t, changeLanguage, i18n };
 };

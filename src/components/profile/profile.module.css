@@ -1,0 +1,23 @@
+
+
+
+.profileName{
+      line-height: 20px;
+      padding: 20px;
+}
+.profileName .fullName{
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+}
+.profileName .title{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color:#777
+}
+
+
+.imageProfile{
+     clip-path: polygon(0 9%,100% 0,100% 94%,0% 100%);
+}

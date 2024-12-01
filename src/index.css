@@ -1,35 +1,38 @@
-@font-face {
-     font-family: 'IranSans';
-     src: url('./../public/fonts/IRANSansXFaNum-Black.ttf ');
-     src: url('./../public/fonts/IRANSansXFaNum-Bold.ttf ');
-     src: url('./../public/fonts/IRANSansXFaNum-DemiBold.ttf ');
-     src: url('./../public/fonts/IRANSansXFaNum-Medium.ttf');
-     src: url('./../public/fonts/IRANSansXFaNum-Medium.ttf');
 
-     font-weight: normal;
-     font-style: normal;
-   }
 
 *{
      margin: 0;
+     font-family: 'Vazirmatn';
 
 }
+
 
    
-body ,html{
-      background-color: #e0d8c5;
-      overflow: hidden;
-      max-height: 100vh;
-      font-family: 'IranSans', sans-serif
-}
-[dir='rtl'] {
-     direction: rtl;
-     text-align: right;
+body, html {
+     background-color: #d1d6d2;
+     overflow: hidden;
+     max-height: 100vh;
+     font-family: 'Vazirmatn', sans-serif;
+     line-height: 1.6; 
+     -webkit-font-smoothing: antialiased; 
+     -moz-osx-font-smoothing: grayscale;
+     font-feature-settings: 'lnum' 0, 'tnum' 0; /* غیرفعال کردن اعداد لاتین */
+     unicode-bidi: embed;
+   }
+   button, input, textarea {
+     font-family: 'Vazirmatn', sans-serif;
    }
    
-   [dir='ltr'] {
-     direction: ltr;
-     text-align: left;
+   [dir="rtl"] button, 
+   [dir="rtl"] input, 
+   [dir="rtl"] textarea {
+     font-feature-settings: "pnum";
+   }
+   
+   [dir="ltr"] button, 
+   [dir="ltr"] input, 
+   [dir="ltr"] textarea {
+     font-feature-settings: "lnum";
    }
 
 @media (max-width:900px) {
@@ -38,9 +41,7 @@ body ,html{
      }
 }
 
-.App{
-      margin-top: 30px;
-}
+
 
 .MuiPaper-root{
       border-radius: 10px !important;
