@@ -13,7 +13,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import { tabs } from "../../models";
+import { tabs } from "./../../data";
 import { useChangeLanguage } from "../../hooks/useChange-language";
 import { useStoreManager } from "../../store/store";
 export default function Header() {

@@ -13,7 +13,7 @@ createRoot(document.getElementById("root")!).render(
         height: "100vh",
         width: "100%",
         overflow: "hidden",
-        padding: "5px",
+        padding: "8px",
       }}
     >
       <App />
