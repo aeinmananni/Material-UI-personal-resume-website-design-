@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import { Outlet } from "react-router-dom";
 import Profile from "../components/profile";
+
 export default function Home() {
   return (
     <Container
@@ -32,7 +33,7 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             height: "100%",
-            justifyContent: "space-between", // This ensures header and footer are spaced out
+            justifyContent: "space-between",
           }}
           size={{ xs: 12, sm: 12, md: 8, lg: 9 }}
         >
@@ -42,21 +43,21 @@ export default function Home() {
               width: "100%",
               height: "100%",
               position: "relative",
-              borderRadius: "2%",
+              borderRadius: "1%",
               border: "3px solid",
-              borderColor: "primary.main",
+              borderColor: "custom.main",
             }}
           >
             <img
               src="https://media.giphy.com/media/doXBzUFJRxpaUbuaqz/giphy.gif"
-              alt="Programming gif"
+              alt=""
               style={{
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
                 pointerEvents: "none",
                 position: "absolute",
-                borderRadius: "2%",
+                borderRadius: "1%",
                 opacity: "10%",
               }}
             />

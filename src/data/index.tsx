@@ -8,9 +8,9 @@ export const tabs: TabsType[] = [
 ];
 
 export const timeLineItems: TimeLineType[] = [
-  { title: "Name:", value: "Mehrayin Mananni" },
-  { title: "Birthday:", value: "23rd of September,1997" },
-  { title: "Job:", value: "FreeLancer" },
-  { title: "Email:", value: "mananniaein1234@gmail.com" },
-  { title: "phone:", value: "+98 9901656003" },
+  { title: "Name", value: "fullName" },
+  { title: "Birth", value: "BirthdayValue" },
+  { title: "Job", value: "FreeLancer" },
+  { title: "Email", value: "mananniaein1234@gmail.com" },
+  { title: "phone", value: "phoneNumber" },
 ];

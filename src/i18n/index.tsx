@@ -19,6 +19,20 @@ const resources = {
       title: "Full Stack Developer",
       download: "Download",
       language: "Language",
+      Name: "Name",
+      Birth: "Birth",
+      FreeLancer: "FreeLancer",
+      Email: "EMAIL",
+      phone: "phone",
+      Job: "Job",
+      phoneNumber: `+${convertNumbers(98, "en")} ${convertNumbers(
+        9901656003,
+        "en"
+      )}`,
+      BirthdayValue: `${convertNumbers(24, "en")} September ${convertNumbers(
+        1997,
+        "en"
+      )}`,
     },
   },
   fa: {
@@ -34,6 +48,20 @@ const resources = {
       fullName: "مهرآیین منانی",
       title: "توسعه‌دهنده فول استک",
       download: "دانلود",
+      Name: "نام",
+      Birth: "تولد",
+      Job: "شغل",
+      FreeLancer: "فریلنسر",
+      Email: "ایمیل",
+      phone: "تلفن",
+      phoneNumber: `${convertNumbers(9901656003, "fa")} +${convertNumbers(
+        98,
+        "fa"
+      )}`,
+      BirthdayValue: `${convertNumbers(2, "fa")} مهر ${convertNumbers(
+        1376,
+        "fa"
+      )}`,
       Reserved: `@ ${convertNumbers(2024, "fa")} کلیه حقوق محفوظ است`,
       language: "زبان",
     },

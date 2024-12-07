@@ -5,6 +5,14 @@
      font-family: 'Vazirmatn';
 
 }
+::-webkit-scrollbar {
+     width: 0px;  /* یا height: 0px برای اسکرول افقی */
+     background: transparent;
+   }
+   ::-webkit-scrollbar-thumb {
+     background: transparent;
+   }
+   
 
 
    
