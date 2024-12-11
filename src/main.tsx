@@ -1,11 +1,11 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
-import { BrowserRouter } from "react-router-dom";
+import { StrictMode } from "react";
 import "./i18n";
 
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter>
+  <StrictMode>
     <div
       style={{
         display: "flex",
@@ -18,5 +18,5 @@ createRoot(document.getElementById("root")!).render(
     >
       <App />
     </div>
-  </BrowserRouter>
+  </StrictMode>
 );

@@ -24,6 +24,7 @@ const resources = {
       FreeLancer: "FreeLancer",
       Email: "EMAIL",
       phone: "phone",
+      aboutMe: "about me",
       Job: "Job",
       phoneNumber: `+${convertNumbers(98, "en")} ${convertNumbers(
         9901656003,
@@ -33,6 +34,7 @@ const resources = {
         1997,
         "en"
       )}`,
+      description: `My name is Mehrain Manani. I'm so happy that you're taking the time to visit my page. Creativity in any work adds beauty to everything, and I've tried to be as creative as I can. I'm a passionate and crazy lover of programming, striving to create the best for myself and others.`,
     },
   },
   fa: {
@@ -48,6 +50,7 @@ const resources = {
       fullName: "مهرآیین منانی",
       title: "توسعه‌دهنده فول استک",
       download: "دانلود",
+      aboutMe: "درباره من",
       Name: "نام",
       Birth: "تولد",
       Job: "شغل",
@@ -64,6 +67,13 @@ const resources = {
       )}`,
       Reserved: `@ ${convertNumbers(2024, "fa")} کلیه حقوق محفوظ است`,
       language: "زبان",
+      description: `اسم من مهراِیین منانی هست. خیلی خوشحالم که وقت می‌گذارید و از صفحه من دیدن می‌کنید. خلاقیت در هر کاری به همه چیز زیبایی می‌بخشه و من سعی کردم تا جایی که می‌توانم خلاق باشم. من یک عاشق دیوانه برنامه‌نویسی هستم و تلاش می‌کنم بهترین‌ها را برای خودم و دیگران خلق کنم.
+
+
+
+
+
+`,
     },
   },
 };

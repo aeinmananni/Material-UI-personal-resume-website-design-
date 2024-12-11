@@ -1,8 +1,9 @@
 import { Container, Grid2 } from "@mui/material";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { Outlet } from "react-router-dom";
+
 import Profile from "../components/profile";
+import { Outlet } from "react-router";
 
 export default function Home() {
   return (
@@ -46,6 +47,9 @@ export default function Home() {
               borderRadius: "1%",
               border: "3px solid",
               borderColor: "custom.main",
+              overflow: "hidden",
+              display: "flex",
+              flexDirection: "column",
             }}
           >
             <img
@@ -59,6 +63,7 @@ export default function Home() {
                 position: "absolute",
                 borderRadius: "1%",
                 opacity: "10%",
+                overflow: "hidden",
               }}
             />
             <Outlet />
