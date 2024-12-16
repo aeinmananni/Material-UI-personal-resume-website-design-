@@ -4,9 +4,13 @@ import {
   TimelineDot,
   TimelineConnector,
 } from "@mui/lab";
-import { PersonOutlineOutlined as PersonIcon } from "@mui/icons-material";
+
 import { useChangeLanguage } from "../../hooks/useChange-language";
-const PersonIconTimeLine = () => {
+
+type PersonTimeLineProps = {
+  icons?: React.ReactNode;
+};
+const IconTimeLines = ({ icons }: PersonTimeLineProps) => {
   const { i18n } = useChangeLanguage();
   const lang = i18n.language === "fa";
   return (
@@ -21,7 +25,7 @@ const PersonIconTimeLine = () => {
         <TimelineDot
           sx={{ backgroundColor: "primary.main", color: "text.primary" }}
         >
-          <PersonIcon />
+          {icons}
         </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
@@ -29,4 +33,4 @@ const PersonIconTimeLine = () => {
   );
 };
 
-export default PersonIconTimeLine;
+export default IconTimeLines;

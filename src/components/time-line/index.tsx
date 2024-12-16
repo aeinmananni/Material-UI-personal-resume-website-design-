@@ -1,9 +1,9 @@
 import { Timeline } from "@mui/lab";
 import { timeLineItems } from "../../data";
 import { useChangeLanguage } from "../../hooks/useChange-language";
-import PersonIconTimeLine from "./person-icons-timeline";
+import IconTimeLines from "./icons-timeline";
 import TableTimeLine from "./table-time-line";
-
+import { PersonOutlineOutlined as PersonIcon } from "@mui/icons-material";
 export default function TimeLineComponent() {
   const { i18n } = useChangeLanguage();
   const lang = i18n.language === "fa";
@@ -31,7 +31,7 @@ export default function TimeLineComponent() {
           mr: lang ? -3.5 : 0,
         }}
       >
-        <PersonIconTimeLine />
+        <IconTimeLines icons={<PersonIcon />} />
 
         {timeLineItems?.map((it, index) => (
           <TableTimeLine it={it} key={index} />

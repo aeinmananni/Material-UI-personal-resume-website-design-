@@ -1,4 +1,4 @@
-import { TabsType, TimeLineType } from "../models";
+import { ResumeType, TabsType, TimeLineType } from "../models";
 
 export const tabs: TabsType[] = [
   { title: "Resume", link: "resume" },
@@ -13,4 +13,31 @@ export const timeLineItems: TimeLineType[] = [
   { title: "Job", value: "FreeLancer" },
   { title: "Email", value: "mananniaein1234@gmail.com" },
   { title: "phone", value: "phoneNumber" },
+];
+
+export const resumeItems: ResumeType[] = [
+  {
+    icons: <i></i>,
+    title: "Fullstack-developer",
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repellendus saepe natus hic esse et accusantium delectus. Accusantium nemo consequuntur unde provident deserunt vero ut ab dolorum, repellendus ipsa id!`,
+    date: "2020",
+  },
+  {
+    icons: <i></i>,
+    title: "Fullstack-developer",
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repellendus saepe natus hic esse et accusantium delectus. Accusantium nemo consequuntur unde provident deserunt vero ut ab dolorum, repellendus ipsa id!`,
+    date: "2020",
+  },
+  {
+    icons: <i></i>,
+    title: "Fullstack-developer",
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repellendus saepe natus hic esse et accusantium delectus. Accusantium nemo consequuntur unde provident deserunt vero ut ab dolorum, repellendus ipsa id!`,
+    date: "2020",
+  },
+  {
+    icons: <i></i>,
+    title: "Fullstack-developer",
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repellendus saepe natus hic esse et accusantium delectus. Accusantium nemo consequuntur unde provident deserunt vero ut ab dolorum, repellendus ipsa id!`,
+    date: "2020",
+  },
 ];
