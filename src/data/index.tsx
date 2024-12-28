@@ -18,9 +18,9 @@ export const timeLineItems: TimeLineType[] = [
 export const resumeItems: ResumeType[] = [
   {
     icons: <i></i>,
-    title: "Fullstack-developer",
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repellendus saepe natus hic esse et accusantium delectus. Accusantium nemo consequuntur unde provident deserunt vero ut ab dolorum, repellendus ipsa id!`,
-    date: "2020",
+    title: "fullStackDeveloper",
+    description: "descriptionFullStack",
+    date: "dateFullStak",
   },
   {
     icons: <i></i>,

@@ -3,8 +3,10 @@ import Page from "../custom/page";
 import ResumeTimeLine from "../custom/resume-time-line";
 import { resumeItems } from "../data";
 import IconTimeLines from "../components/time-line/icons-timeline";
-
+import { Work } from "@mui/icons-material";
+import { useChangeLanguage } from "../hooks/useChange-language";
 const Resume = () => {
+  const { t } = useChangeLanguage();
   return (
     <Page title="Resume">
       <Grid2 container>
@@ -12,7 +14,22 @@ const Resume = () => {
           <div
             style={{ width: "100%", display: "flex", justifyContent: "start" }}
           >
-            <IconTimeLines icons={<span>ddd</span>} />
+            <IconTimeLines icons={<Work />} />
+          </div>
+          {resumeItems.map((item, index) => (
+            <ResumeTimeLine
+              key={index}
+              title={t(item.title)}
+              date={t(item.date)}
+              description={t(item.description)}
+            />
+          ))}
+        </Grid2>
+        <Grid2 size={{ xs: 12, md: 6 }}>
+          <div
+            style={{ width: "100%", display: "flex", justifyContent: "start" }}
+          >
+            <IconTimeLines icons={<Work />} />
           </div>
           {resumeItems.map((item, index) => (
             <ResumeTimeLine
@@ -22,9 +39,6 @@ const Resume = () => {
               description={item.description}
             />
           ))}
-        </Grid2>
-        <Grid2 size={{ xs: 12, md: 6 }}>
-          <ResumeTimeLine />
         </Grid2>
       </Grid2>
     </Page>

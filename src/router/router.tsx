@@ -3,6 +3,7 @@ import Home from "../home";
 import Content from "../components/content";
 import AboutMe from "../pages/about-me";
 import Resume from "../pages/resume";
+import SkillsAndServices from "../pages/skills-services";
 const routes: RouteObject[] = [
   {
     path: "/",
@@ -19,6 +20,10 @@ const routes: RouteObject[] = [
       {
         path: "resume",
         element: <Resume />,
+      },
+      {
+        path: "skillsAndServices",
+        element: <SkillsAndServices />,
       },
     ],
   },
